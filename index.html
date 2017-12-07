@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Vue的render方法说明</title>
+		<meta charset="UTF-8" />
+		<script src="index.js" type="text/javascript" charset="utf-8"></script>
+
+	</head>
+
+	<body>
+		<div id="app">
+			<input v-model="price" />
+			<child :level=777 :prs='price'>
+				 无可奈何ggg
+				<div slot="bocc">bocc中的内容</div>
+				<template slot-scope="{text}" slot="kosc">
+					子级修改父级kosc中的内容:{{text}}
+				</template>
+			</child>
+		</div>
+
+	</body>
+
+</html>
